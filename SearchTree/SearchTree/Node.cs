@@ -8,22 +8,27 @@ namespace SearchTree
 {
     class Node
     {
-        public int data;
+        public int value;
         public Node right;
         public Node left;
 
            
 
-        public Node(int data)
+        public Node(int value)
         {
-            this.data = data;
+            this.value = value;
             right = null;
             left = null;
         }
-       
-        public void NodeInsert ()
-        {
 
+        public int Right { get; set }
+        
+
+        public int Left { get; set }
+
+        public Node()
+        {
+                
         }
     }
 }
