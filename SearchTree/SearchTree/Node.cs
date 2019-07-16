@@ -8,5 +8,21 @@ namespace SearchTree
 {
     class Node
     {
+        public int data;
+        public Node rightBranch;
+        public Node leftBranch;
+           
+
+        public Node(int data)
+        {
+            this.data = data;
+            rightBranch = default;
+            leftBranch = default;
+        }
+       
+        public void NodeInsert ()
+        {
+
+        }
     }
 }
