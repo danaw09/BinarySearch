@@ -9,15 +9,16 @@ namespace SearchTree
     class Node
     {
         public int data;
-        public Node rightBranch;
-        public Node leftBranch;
+        public Node right;
+        public Node left;
+
            
 
         public Node(int data)
         {
             this.data = data;
-            rightBranch = default;
-            leftBranch = default;
+            right = null;
+            left = null;
         }
        
         public void NodeInsert ()
