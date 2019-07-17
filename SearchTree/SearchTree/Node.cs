@@ -11,8 +11,7 @@ namespace SearchTree
         public int value;
         public Node right;
         public Node left;
-
-           
+        
 
         public Node(int value)
         {
@@ -21,14 +20,20 @@ namespace SearchTree
             left = null;
         }
 
-        public int Right { get; set }
-        
-
-        public int Left { get; set }
-
-        public Node()
+        public void InsertNode(ref Node root, int input)
         {
-                
+            if (root == null)
+            {
+                root = new Node(input);
+            }
+            else if (root.value > input)
+            {
+                InsertNode(ref root.left, input);
+            }
+            else if (root.value < input)
+            {
+                InsertNode(ref root.right, input);
+            }
         }
     }
 }
